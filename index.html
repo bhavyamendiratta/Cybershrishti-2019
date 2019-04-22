@@ -1,0 +1,853 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Go Green</title>
+        <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    
+    
+    <style type="text/css">
+    	body {
+  color: #6c7a73; }
+  body section {
+    padding: 20px; }
+
+.greenButton {
+  border: 1.5px solid #52be92;
+  border-radius: 5px;
+  padding: 10px 30px;
+  background: #52be92;
+  color: white; }
+  @media (max-width: 599px) {
+    .greenButton {
+      padding: 10px 20px; } }
+  .greenButton:hover {
+    cursor: pointer; }
+  .greenButton:hover {
+    background: white;
+    transition: background-color 300ms linear;
+    color: #52be92; }
+
+.whiteButton {
+  border: 1.5px solid #52be92;
+  border-radius: 5px;
+  padding: 10px 30px;
+  background: white; }
+  @media (max-width: 599px) {
+    .whiteButton {
+      padding: 10px 20px; } }
+  .whiteButton:hover {
+    cursor: pointer; }
+  .whiteButton:hover {
+    background: #52be92;
+    transition: background-color 300ms linear;
+    color: white; }
+
+header {
+  display: flex;
+  justify-content: space-between; }
+  header #logoHeader {
+    padding: 10px;
+    font-size: 30px;
+    vertical-align: middle; }
+    header #logoHeader img {
+      max-width: 40px; }
+    header #logoHeader span {
+      font-size: 30px; }
+    @media (max-width: 700px) {
+      header #logoHeader {
+        justify-content: center; } }
+  header #headerRight {
+    font-size: 1.1rem; }
+    header #headerRight ul li {
+      padding: 10px;
+      display: inline; }
+      @media (max-width: 700px) {
+        header #headerRight ul li {
+          padding: 5px; } }
+    @media (max-width: 700px) {
+      header #headerRight .toHide {
+        display: none; } }
+  @media (max-width: 599px) {
+    header {
+      display: block;
+      text-align: center; } }
+
+#section1 {
+  width: 95%;
+  display: flex;
+  margin: 0 auto; }
+  #section1 #donateSection {
+    flex: 40%;
+    padding-left: 20px;
+    vertical-align: middle;
+    padding-top: 30px;
+    font-size: 1.2rem; }
+    #section1 #donateSection #donateButton {
+      margin-top: 20px; }
+      #section1 #donateSection #donateButton button {
+        margin: 0 auto;
+        display: block;
+        padding: 10px 50px;
+        font-size: 1.3rem; }
+    @media (max-width: 700px) {
+      #section1 #donateSection {
+        flex: 100%;
+        text-align: center; } }
+  #section1 #imageSec {
+    padding: 10px;
+    flex: 40%; }
+    #section1 #imageSec img {
+      width: 100%; }
+      @media (max-width: 700px) {
+        #section1 #imageSec img {
+          display: none; } }
+    @media (max-width: 700px) {
+      #section1 #imageSec {
+        flex: 0%; } }
+
+#section2 .section2Header {
+  width: 100%;
+  font-size: 40px;
+  text-align: center; }
+  #section2 .section2Header span {
+    border-bottom: 2px solid #696969; }
+#section2 #cardSection {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+  #section2 #cardSection .card {
+    margin: 30px 20px;
+    text-align: center;
+    padding: 20px 30px;
+    flex: 1 0 calc(33.333% - 155px);
+    border-radius: 5px; }
+    #section2 #cardSection .card:hover {
+      cursor: pointer;
+      box-shadow: 0 5px 8px rgba(0, 0, 0, 0.12), 0 3px 5px rgba(0, 0, 0, 0.24);
+      transition: box-shadow 400ms linear; }
+    #section2 #cardSection .card .cardImage {
+      max-width: 50px; }
+    @media (max-width: 599px) {
+      #section2 #cardSection .card {
+        margin: 10px 3px; } }
+@media (max-width: 599px) {
+  #section2 {
+    width: 100%; } }
+
+  #section2 #cardSection .cards {
+    margin: 30px 20px;
+    text-align: center;
+    padding: 20px 30px;
+    flex: 1 0 calc(33.333% - 155px);
+    border-radius: 5px;
+          box-shadow: 0 5px 8px rgba(0, 0, 0, 0.12), 0 3px 5px rgba(0, 0, 0, 0.24); }
+    
+#section2 #cardSection .cards .cardImage {
+      max-width: 50px; }
+    @media (max-width: 599px) {
+      #section2 #cardSection .cards {
+        margin: 10px 3px; } }
+@media (max-width: 599px) {
+  #section2 {
+    width: 100%; } }
+
+
+#section3 {
+  color: #f6fbfa;
+  height: auto; }
+  #section3 #volunteerFeedbackCard {
+    width: 80%;
+    margin-left: auto;
+    background-color: #52be92;
+    text-align: center;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    height: 400px; }
+    #section3 #volunteerFeedbackCard .text {
+      width: 50%;
+      margin: 0 auto;
+      padding: 20px 50px;
+      transition: display 200ms;
+      opacity: 1;
+      transition: opacity 1s; }
+      #section3 #volunteerFeedbackCard .text img {
+        max-height: 100px; }
+      @media (max-width: 700px) {
+        #section3 #volunteerFeedbackCard .text {
+          width: 90%;
+          padding: 10px 25px; } }
+    #section3 #volunteerFeedbackCard .text2 {
+      display: none; }
+    #section3 #volunteerFeedbackCard .arrowButtons {
+      text-align: center; }
+      #section3 #volunteerFeedbackCard .arrowButtons img:hover {
+        cursor: pointer; }
+    @media (max-width: 700px) {
+      #section3 #volunteerFeedbackCard {
+        width: 100%;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px; } }
+  #section3 #volunteerFeedbackSideBar {
+    width: 10%;
+    height: 100%;
+    background: url(st.png) no repeat; }
+    @media (max-width: 700px) {
+      #section3 #volunteerFeedbackSideBar {
+        display: none; } }
+  #section3 #volunteerCardHolder {
+    width: 10%; }
+    @media (max-width: 700px) {
+      #section3 #volunteerCardHolder {
+        display: none; } }
+  @media (max-width: 700px) {
+    #section3 {
+      padding: 0px; } }
+
+footer {
+  width: 100%;
+  background: url(footer.jpg) no-repeat;
+  background-size: 100%;
+  color: white; }
+  footer .footer-heading {
+    text-align: center;
+    font-size: 1.5rem;
+    padding-top: 130px; }
+  footer .footer-form {
+    text-align: center;
+    padding: 30px;
+    margin-top: 30px; }
+    footer .footer-form input {
+      padding: 10px; }
+    footer .footer-form button {
+      background: #52be92;
+      border: 1px solid black;
+      padding: 11px 30px;
+      margin-left: -5px; }
+  footer .main-footer {
+    display: flex;
+    margin-top: 40px; }
+    footer .main-footer .footer-favicons {
+      flex: 30%;
+      text-align: center;
+      padding-top: 30px; }
+      footer .main-footer .footer-favicons img {
+        max-width: 30px; }
+    footer .main-footer .footer-list {
+      flex: 70%;
+      font-size: 1.1rem; }
+      footer .main-footer .footer-list ul {
+        display: inline-block;
+        list-style: none; }
+        footer .main-footer .footer-list ul li {
+          padding: 5px 60px; }
+          @media (max-width: 700px) {
+            footer .main-footer .footer-list ul li {
+              padding: 5px 20px; } }
+        footer .main-footer .footer-list ul .list-head {
+          font-weight: 600;
+          padding: 10px 60px; }
+          @media (max-width: 700px) {
+            footer .main-footer .footer-list ul .list-head {
+              padding: 5px 20px; } }
+    @media (max-width: 700px) {
+      footer .main-footer {
+        display: block;
+        background-image: none;
+        background: #52be92; } }
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding: 0;
+}
+
+body{
+  font-family:'Roboto',sans-serif; 
+  line-height:1.4;
+}
+
+a{
+  text-decoration: none;
+  color:white;
+}
+
+
+.container{
+  max-width:1200px;
+  margin:auto;
+  padding:1rem 2rem;
+  overflow:hidden;
+  
+}
+.l-heading{
+  font-size: 2rem;
+  line-height:1.1rem;
+  margin-bottom: 2rem;
+  margin-top:10rem;
+
+}
+.px-1{
+  padding:2rem 22rem  ;
+}
+
+
+.py-3{
+  padding:3rem 0 ;
+}
+.py-1{
+  padding:0.2rem 0 ;
+}
+
+
+
+.p{
+  padding: 0.6rem 1.9rem;
+}
+.text-center{
+  text-align: center;
+}
+
+.btn{
+  
+  color:white;
+  background: #47ab85;
+  padding: 0.7rem 1rem;
+ border:none;
+ cursor:pointer;
+
+  
+}
+
+#main-footer{
+  background:#4FBE94;
+  height:80vh;
+  color:white;
+  background: url(footer.jpg) no-repeat;
+  background-size: 100% 100%; 
+  margin-top: -3.5rem ;
+}
+.footer-container {
+  display: grid;
+  grid-template-columns: 7fr 5fr 5fr 5fr 5fr;
+  
+  padding: 2.6rem ;
+  
+
+}
+
+.footer-container ul{
+  list-style: none;
+  text-decoration: none;
+}
+
+  .item {
+  display: grid;
+
+  grid-template-columns: repeat(6, 2fr);
+  grid-gap:1rem;
+  
+  
+} 
+.item li:first-child{
+  font-weight: bold;
+}
+ 
+.item li a{
+  color: #fff;
+}
+.footer-container i{
+  padding: 0 0.3rem;
+}
+
+@media screen and (max-width: 1080px) {
+	.btn {
+  color: white;
+  background: #47ab85;
+  padding: 0.7rem 7.6rem;
+  border: none;
+  cursor: pointer;
+}
+.px-1 {
+  padding: 2rem 30%;
+}
+
+.p {
+  padding: 0.6rem 5rem;
+}
+
+#main-footer {
+  background: #4fbe94;
+  height: 80vh;
+  color: white;
+  background-size: 100% 100%;
+  margin-top: -3.5rem;
+}
+.l-heading {
+  font-size: 2rem;
+  line-height: 1.1rem;
+  margin-bottom: 3rem;
+  margin-top: 9rem;
+  margin-right: 5.5rem;
+}
+
+
+ }
+ @media screen and (max-width: 890px) {
+  .btn {
+  color: white;
+  background: #47ab85;
+  padding: 0.7rem 7.6rem;
+  border: none;
+  cursor: pointer;
+}
+.px-1 {
+  padding: 2rem 30%;
+}
+
+.p {
+  padding: 0.6rem 4.5rem;
+}
+
+#main-footer {
+  background-color: #5acca1;
+  height: 85vh;
+  color: white;
+
+  background-size: 100% 100%;
+  background-image: none;
+  margin-top: 3.5rem;
+    left: 0;
+  bottom: 0;
+  width: 100%;
+  
+}
+.l-heading {
+  font-size: 2rem;
+  line-height: 1.1rem;
+  margin-bottom: 4rem;
+  margin-top: 7.5rem;
+  margin-left: 4rem;
+}
+.footer-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+  padding: 1.6rem 0.6rem;
+}
+.footer-container ul {
+  list-style: none;
+  text-decoration: none;
+}
+
+.item {
+  display: grid;
+
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 0.6rem;
+}
+
+.py-3 {
+  visibility: hidden;
+}
+
+}
+@media screen and (max-width: 590px) {
+.btn {
+  color: white;
+  background: #47ab85;
+  padding: 0.7rem 3.65rem;
+  border: none;
+  cursor: pointer;
+}
+
+.text-center {
+  text-align: none;
+  padding-left: 9%;
+  margin-top: -4rem;
+}
+.px-1 {
+  padding: 2rem 36%;
+}
+
+.p {
+  padding: 0.6rem 0.5rem;
+}
+
+#main-footer {
+  background-color: #5acca1;
+  height: 60vh;
+  color: white;
+
+  background-size: 100% 100%;
+  background-image: none;
+  margin-top: 3.5rem;
+    
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  min-height: 10vh;
+  
+  
+}
+.l-heading {
+  font-size: 2rem;
+  line-height: 1.1rem;
+  margin-bottom: 4rem;
+  margin-top: 7.5rem;
+}
+.footer-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+  padding: 1rem 0rem;
+}
+.footer-container ul {
+  list-style: none;
+  text-decoration: none;
+}
+
+.item {
+  display: grid;
+
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 0.6rem;
+}
+
+.py-3 {
+  visibility: hidden;
+}
+
+.qw {
+  visibility: hidden;
+}
+
+}
+
+@media screen and (max-width: 435px) {
+  .btn {
+  color: white;
+  background: #47ab85;
+  padding: 0.5rem 3.3rem;
+  border: none;
+  cursor: pointer;
+}
+
+.text-center {
+  text-align: none;
+  padding-left: 3%;
+  margin-top: -4rem;
+}
+.px-1 {
+  padding: 0.1rem 20%;
+}
+
+.p {
+  padding: 0.4rem 0.1rem;
+}
+
+#main-footer {
+  background-color: #5acca1;
+  
+  color: white;
+
+  background-size: 100% 100%;
+  background-image: none;
+  margin-top: 3.5rem;
+
+}
+.l-heading {
+  font-size: 15px;
+  line-height: 0.2rem;
+  margin-bottom: 2rem;
+  margin-top: 7.5rem;
+}
+.footer-container {
+  display: grid;
+  grid-template-columns: 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr;
+  
+  padding: 1rem 0rem;
+}
+.footer-container ul {
+  list-style: none;
+  text-decoration: none;
+}
+
+.item {
+  display: grid;
+
+  grid-template-columns: repeat(6, 0.2fr);
+  grid-gap: 0.15rem;
+  margin-right: -2px;
+}
+
+.py-3 {
+  visibility: hidden;
+}
+
+.qw {
+  visibility: hidden;
+}
+
+}
+
+    </style>
+    </head>
+<body>
+
+<header>
+    <div id = "logoHeader">
+        <img src="1.png">
+        GoGreen
+    </ul>
+    </div>
+    <div id = "headerRight">
+        <br><ul>
+        <li class="toHide">Act</li>
+        <li class="toHide">Learn</li>
+        <li class="toHide">About Us</li>
+        <li><button class = "whiteButton">SignUp</button></li>
+        <li><button class="greenButton">Login</button></li>
+    </ul>
+    </div>
+</header>
+
+<section id="section1">
+    <div id="threeLines">
+    </div>
+    <div id="donateSection">
+        <h2>Together We Are Making Change</h2>
+        <span>
+           Our problems are interconnected.So are the  solutions.There is no single way to 'save the planet'.From marching side by side on the halls of power to replanting a forest,we thrive when we cooperate.Everyday people can band together and challenge even the worlds most powerful forces. 
+        </span>
+        <div id="donateButton">
+            <button class="greenButton">Donate</button>
+        </div>
+    </div>
+    <div id="imageSec">
+        <img src="21.jpg">
+    </div>
+</section>
+<section id="section2">
+    <div class="section2Header">
+        K<span>now Abo</span>ut Us
+    </div>
+    <div id="cardSection">
+        <div class="card">
+            <div>
+                <img class = "cardImage" src="4.jpg">
+            </div>
+            <div>
+                <h3>Our Values</h3>
+                <p>
+                    abcjdcbsjdbdjcjksdncsjdkcnjjcnsdncjdskdjc
+                </p>
+            </div>
+        </div>
+        <div class="cards">
+                <div>
+                    <img class = "cardImage" src="1.png">
+                </div>
+                <div>
+                    <h3>History and Successes</h3>
+                    <p>
+                        sdcbsjdhcbsdc kjsdhbchsdukcs
+                    </p>
+                </div>
+            </div>
+<div class="card">
+        <div>
+            <img class = "cardImage" src="6.png">
+        </div>
+        <div>
+            <h3>About Us</h3>
+            <p>
+                sddcbksdhvchsbd jkcbhvsdbcisdhcvs
+            </p>
+        </div>
+    </div>
+    <div class="card">
+            <div>
+                <img class = "cardImage" src="3.png">
+            </div>
+            <div>
+                <h3>Contact Us</h3>
+                <p>
+                   cusduhvcbsd  hicbhsvdubchijsd hcvuhdihsdhchh
+                </p>
+            </div>
+        </div>
+        <div class="card">
+                <div>
+                    <img class = "cardImage" src="7.png">
+                </div>
+                <div>
+                    <h3>People Power</h3>
+                    <p>
+                       bjdsbhcbsdc knjsh dcbusdjhbcvsdgu cisdjjcgvsdc
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                    <div>
+                        <img class = "cardImage" src="i.png">
+                    </div>
+                    <div>
+                        <h3>Change the World</h3>
+                        <p>
+                            vijcoj sdbhgcvd sjocidhsgc hbjosdji chvsdvcjksdc
+                        </p>
+                    </div>
+                </div>
+
+
+</section>
+
+<section id="section3" class = "flip-box">
+    <div id="volunteerFeedbackCard" class = "flip-box-inner">
+        <div class="text1 text flip-box-front">
+        <h2>Volunteer Feedback</h2>
+        <br>
+        <span>csdcsn  
+        </span>
+        <br>
+        <img src="">
+        <br>
+        <h4>Mendiratta</h4>
+        <br>
+        Now is the winter of our discontent  
+Made glorious summer by this sun of York;  
+And all the clouds that lour'd upon our house  
+;
+        
+    </div>
+    <div class="text2 text flip-box-back">
+        <h2>Volunteer Feedback</h2>
+        <br>
+        <span>qwerty  qwerty
+        </span>
+        <br>
+        <img src="">
+        <br>
+        <h4>Bhavya</h4>
+        <br>
+        In the deep bosom of the ocean buried.  
+Now are our brows bound with victorious wreaths;
+Our bruised arms hung up for monuments
+        
+    </div>
+    <div class="arrowButtons">
+            <img  src="left.png" onclick="next();">
+            <img  src="right.png" onclick="next();">
+    </div>
+    </div></section>
+    
+
+ 
+<footer id="main-footer">
+      <div class="container ">
+        <h2 class="l-heading text-center ">Get in Touch</h2>
+        <form class="form-contents  px-1">
+          <label for="email"></label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter Your Email"
+            class="p"
+          /><button class="btn">Subscribe</button>
+        </form>
+        <div class="footer-container">
+          <div class="py-3 ">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+
+          <div>
+            <div class="item">
+              <ul>
+                <li class="py-1"><a href="#"> About</a></li>
+                <li class="py-1 qw"><a href="#"> Our Story</a></li>
+                <li class="py-1 qw"><a href="#"> Blog</a></li>
+                
+                
+          
+              </ul>
+            </div>
+          </div>
+          <div>
+            <div class="item">
+              <ul>
+                <li class="py-1"><a href="#"> Support</a></li>
+                <li class="py-1 qw"><a href="#"> Learn</a></li>
+                <li class="py-1 qw"><a href="#"> Pricing</a></li>
+              
+              </ul>
+            </div>
+          </div>
+          <div>
+            <div class="item">
+              <ul>
+                <li class="py-1"><a href="#"> Products</a></li>
+                <li class="py-1 qw"><a href="#"> Our Lesson</a></li>
+                <li class="py-1 qw"><a href="#"> Subject</a></li>
+                
+               
+              </ul>
+            </div>
+          </div>
+          <div>
+            <div class="item">
+              <ul>
+                <li class="py-1"><a href="#"> Products</a></li>
+                <li class="py-1 qw"><a href="#"> Our Lesson</a></li>
+                <li class="py-1 qw"><a href="#">Subject</a></li>
+                
+                
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    
+    
+    </section>
+<script>
+    function next() {
+        if (document.getElementsByClassName("text1")[0].style.display == "none") {
+            document.getElementsByClassName("text1")[0].style.display = "block";
+            document.getElementsByClassName("text2")[0].style.display = "none";
+
+        } else {
+            document.getElementsByClassName("text2")[0].style.display = "block";
+            document.getElementsByClassName("text1")[0].style.display = "none";
+
+        }
+    }
+function leftShift() {
+    document.getElementsByClassName("text1")[0].style.display = "block";
+    document.getElementsByClassName("text2")[0].style.display = "none";
+
+}
+function rightShift() {
+    document.getElementsByClassName("text2")[0].style.display = "block";
+    document.getElementsByClassName("text1")[0].style.display = "none";
+
+}
+</script>
+</body>
+</html>
